@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG Plomberie - Expert en Plomberie & Chauffage</title>
+    <meta name="description" content="Entreprise de plomberie professionnelle à votre service pour tous travaux de plomberie, chauffage et sanitaire. Intervention rapide et qualité garantie.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" async defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-wrench"></i>
+                <span>NG Plomberie</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Expert en Plomberie & Chauffage</h1>
+            <p>Service professionnel rapide et fiable pour tous vos travaux de plomberie</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Demandez un Devis</a>
+                <a href="tel:+33123456789" class="btn btn-secondary">Appelez-nous</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-tools"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3>Plomberie Générale</h3>
+                    <p>Réparation, installation et maintenance de systèmes de plomberie résidentiels et commerciaux.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Chauffage</h3>
+                    <p>Installation et réparation de chaudières, radiateurs, systèmes de chauffage central.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Sanitaire</h3>
+                    <p>Installation de salles de bain, éviers, toilettes, robinetterie de qualité professionnelle.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Dépannage 24/7</h3>
+                    <p>Intervention d'urgence rapide pour fuites, ruptures et problèmes urgents de plomberie.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Éco Solutions</h3>
+                    <p>Installation de systèmes éco-énergétiques et solutions d'économie d'eau.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifié RGE</h3>
+                    <p>Travaux éligibles aux crédits d'impôt et aides gouvernementales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos de NG Plomberie</h2>
+                    <p>NG Plomberie est une entreprise familiale fondée en 2010, spécialisée dans les travaux de plomberie, chauffage et sanitaire. Notre équipe de professionnels certifiés met à votre service son expertise et son savoir-faire pour répondre à toutes vos besoins.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>10+ ans d'expérience</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Techniciens certifiés</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garantie 2 ans</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Intervention rapide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Clients satisfaits</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15000+</div>
+                        <div class="stat-label">Interventions</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>123 Avenue de la Plomberie<br>75000 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>01 23 45 67 89<br>06 12 34 56 78 (Urgences)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>contact@ng-plomberie.fr<br>devis@ng-plomberie.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-details">
+                            <h3>Horaires</h3>
+                            <p>Lun-Ven: 8h-20h<br>Sam: 9h-18h<br>Dim: Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="plomberie">Plomberie générale</option>
+                                <option value="chauffage">Chauffage</option>
+                                <option value="sanitaire">Sanitaire</option>
+                                <option value="urgence">Dépannage urgent</option>
+                                <option value="eco">Éco solutions</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NG Plomberie</h3>
+                    <p>Expert en plomberie et chauffage depuis 2010</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Plomberie</a></li>
+                        <li><a href="#services">Chauffage</a></li>
+                        <li><a href="#services">Sanitaire</a></li>
+                        <li><a href="#services">Dépannage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">CGV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@ng-plomberie.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NG Plomberie. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
