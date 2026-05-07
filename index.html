@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" async defer></script>
+    <script src="https://maps.googleapis.com/api/js?key=AIzaSyBFw0Qbyq9zTFTd-tUY6d_cLbnZU1c8R5c&libraries=places&callback=initMap" async defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -21,6 +21,9 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Accueil</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#realisations" class="nav-link">Réalisations</a></li>
+                <li><a href="#avis" class="nav-link">Avis</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
                 <li><a href="#about" class="nav-link">À propos</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -98,6 +101,218 @@
         </div>
     </section>
 
+    <!-- Realizations Section -->
+    <section id="realisations" class="realisations">
+        <div class="container">
+            <h2>Nos Réalisations</h2>
+            <p>Découvrez notre expertise à travers nos chantiers réels</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&crop=center" alt="Salle de bain moderne" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Rénovation Salle de Bain</h3>
+                        <p>Paris 15e</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=400&h=300&fit=crop&crop=center" alt="Installation de chaudière" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Installation Chaudière</h3>
+                        <p>Boulogne-Billancourt</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=300&fit=crop&crop=center" alt="Cuisine équipée" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Plomberie Cuisine</h3>
+                        <p>Neuilly-sur-Seine</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=300&fit=crop&crop=center" alt="Chauffage central" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Rénovation Chauffage</h3>
+                        <p>Clichy</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1601762235854-6907e87b996c?w=400&h=300&fit=crop&crop=center" alt="Sanitaire moderne" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Salle de Bain Design</h3>
+                        <p>Levallois-Perret</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop&crop=center" alt="Dépannage plomberie" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Dépannage Urgence</h3>
+                        <p>Issy-les-Moulineaux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="avis" class="avis">
+        <div class="container">
+            <h2>Avis Clients</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">👨‍🔧</div>
+                            <div class="reviewer-details">
+                                <h4>Martin D.</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">15/01/2024</span>
+                    </div>
+                    <p class="review-text">"Très professionnel et rapide! L'équipe a installé ma nouvelle salle de bain avec une qualité impeccable. Je recommande vivement NG Plomberie."</p>
+                    <div class="review-service">Installation sanitaire</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">👩‍💼</div>
+                            <div class="reviewer-details">
+                                <h4>Sophie L.</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">08/01/2024</span>
+                    </div>
+                    <p class="review-text">"Dépannage efficace pour une fuite d'eau. Intervention le jour même, très compétent et poli. Tarifs transparents."</p>
+                    <div class="review-service">Dépannage urgent</div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">👨‍👩‍👧‍👦</div>
+                            <div class="reviewer-details">
+                                <h4>Les Dubois</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="review-date">22/12/2023</span>
+                    </div>
+                    <p class="review-text">"Rénovation complète du chauffage. Très bon conseil, travail soigné et garantie respectée. Merci à toute l'équipe!"</p>
+                    <div class="review-service">Chauffage central</div>
+                </div>
+            </div>
+            <div class="review-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4.8</div>
+                    <div class="stat-label">Note moyenne</div>
+                    <div class="stat-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">127</div>
+                    <div class="stat-label">Avis vérifiés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Réponse aux avis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Quels sont vos horaires d'intervention ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous intervenons du lundi au vendredi de 8h à 20h, le samedi de 9h à 18h. Pour les urgences, notre service d'urgence est disponible 24h/24 et 7j/7 au 06 12 34 56 78.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Proposez-vous des garanties sur vos travaux ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oui, nous offrons une garantie de 2 ans sur tous nos travaux et 5 ans sur les installations de chauffage. Tous nos matériaux sont garantis conforme aux normes en vigueur.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Êtes-vous certifié RGE ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oui, NG Plomberie est certifiée RGE (Reconnu Garant de l'Environnement). Cette certification vous permet de bénéficier de crédits d'impôt et d'aides gouvernementales pour vos travaux d'économie d'énergie.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Comment obtenir un devis gratuit ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Vous pouvez demander un devis gratuit en remplissant notre formulaire de contact, en nous appelant au 01 23 45 67 89, ou par email à devis@ng-plomberie.fr. Nous intervenons pour un devis sur site gratuit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Quels types de paiement acceptez-vous ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous acceptons le paiement par carte bancaire, chèque, virement bancaire et espèces. Nous proposons également des facilités de paiement pour les travaux importants.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Intervenez-vous pour les particuliers et professionnels ?</h3>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous intervenons à la fois pour les particuliers et les professionnels (bureaux, commerces, restaurants, etc.). Nous adaptons nos services à chaque type de clientèle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -124,18 +339,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <div class="stat-number">5000+</div>
-                        <div class="stat-label">Clients satisfaits</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">15000+</div>
-                        <div class="stat-label">Interventions</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">98%</div>
-                        <div class="stat-label">Satisfaction</div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=400&fit=crop&crop=center" alt="Équipe NG Plomberie" loading="lazy">
+                </div>
+                <div class="team-section">
+                    <h3>Notre Équipe</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar">👨‍🔧</div>
+                            <h4>Jean Martin</h4>
+                            <p>Fondateur & Plombier Certifié</p>
+                            <div class="member-certifications">
+                                <span>Certifié RGE</span>
+                                <span>Qualibat</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">👩‍🔧</div>
+                            <h4>Marie Dubois</h4>
+                            <p>Chauffagiste Expert</p>
+                            <div class="member-certifications">
+                                <span>Certifiée Qualifelec</span>
+                                <span>AFPA</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">👨‍🔧</div>
+                            <h4>Pierre Bernard</h4>
+                            <p>Technicien Sanitaire</p>
+                            <div class="member-certifications">
+                                <span>Certifié CSTB</span>
+                                <span>5 ans expérience</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
