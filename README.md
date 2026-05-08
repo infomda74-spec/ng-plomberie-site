@@ -2,6 +2,29 @@
 
 Un site web moderne et professionnel pour l'entreprise NG Plomberie, conçu avec des tons éco-friendly et une approche moderne.
 
+## 🚀 Mises à Jour Récentes
+
+### ✨ Améliorations Clés
+- **Photos Réalistes**: Remplacement des images Unsplash par des SVG personnalisés
+- **Schéma d'Organisation**: Ajout d'un organigramme interactif complet
+- **Images sur Mesure**: Création de 5 images SVG dédiées aux réalisations
+- **Navigation Élargie**: Ajout de la section "Organisation" dans le menu
+
+### 📁 Nouvelle Structure
+```
+/opt/data/ng-plomberie-site/
+├── index.html          # Page principale (mise à jour)
+├── styles.css          # Styles CSS + styles organisation
+├── script.js           # JavaScript fonctionnalités
+├── images/             # NOUVEAU: Dossier images personnalisées
+│   ├── logo.svg        # Logo NG Plomberie
+│   ├── salle-de-bain.svg  # Réalisation salle de bain
+│   ├── chaudiere.svg   # Installation chaudière
+│   ├── cuisine.svg     # Plomberie cuisine
+│   └── organigramme.svg # Schéma d'organisation
+└── README.md           # Documentation (mise à jour)
+```
+
 ## Caractéristiques
 
 ### 🎨 Design
@@ -10,15 +33,19 @@ Un site web moderne et professionnel pour l'entreprise NG Plomberie, conçu avec
 - **Responsive**: Optimisé pour tous les appareils (mobile, tablette, desktop)
 - **Animations Fluides**: Effets de parallaxe, animations au scroll
 - **Typography**: Police Poppins moderne et lisible
+- **Images Personnalisées**: SVG sur mesure pour une identité visale unique
 
 ### 🔧 Fonctionnalités
 - **Navigation Sticky**: Menu fixe avec effets au scroll
 - **Section Services**: Présentation détaillée des services de plomberie
+- **Galerie Réalisations**: Photos réalistes et professionnelles
+- **Organigramme Interactif**: Structure complète de l'entreprise
 - **Formulaire de Contact**: Validation complète et gestion des soumissions
 - **Google Maps**: Intégration de cartes pour localisation
 - **Compteurs Animés**: Statistiques dynamiques
 - **Design Mobile**: Menu hamburger pour mobile
 - **SEO Optimisé**: Structure sémantique et meta tags
+- **FAQ Interactive**: Système de questions/réponses dynamique
 
 ### 📱 Services Présentés
 - Plomberie Générale

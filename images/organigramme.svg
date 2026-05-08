@@ -1,0 +1,102 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2d5016">Organisation NG Plomberie</text>
+  
+  <!-- CEO Box -->
+  <rect x="300" y="80" width="200" height="60" rx="8" fill="#2d5016" stroke="#1b5e20" stroke-width="2"/>
+  <text x="400" y="105" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Jean Martin</text>
+  <text x="400" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Fondateur & Directeur</text>
+  
+  <!-- Connection lines from CEO -->
+  <line x1="400" y1="140" x2="400" y2="180" stroke="#666" stroke-width="2"/>
+  <line x1="200" y1="180" x2="600" y2="180" stroke="#666" stroke-width="2"/>
+  <line x1="200" y1="180" x2="200" y2="200" stroke="#666" stroke-width="2"/>
+  <line x1="400" y1="180" x2="400" y2="200" stroke="#666" stroke-width="2"/>
+  <line x1="600" y1="180" x2="600" y2="200" stroke="#666" stroke-width="2"/>
+  
+  <!-- Department Heads -->
+  <!-- Technical Manager -->
+  <rect x="100" y="200" width="200" height="60" rx="8" fill="#4a7c59" stroke="#2e7d32" stroke-width="2"/>
+  <text x="200" y="225" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Marie Dubois</text>
+  <text x="200" y="245" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">Responsable Technique</text>
+  
+  <!-- Operations Manager -->
+  <rect x="300" y="200" width="200" height="60" rx="8" fill="#4a7c59" stroke="#2e7d32" stroke-width="2"/>
+  <text x="400" y="225" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Pierre Bernard</text>
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">Responsable Opérations</text>
+  
+  <!-- Commercial Manager -->
+  <rect x="500" y="200" width="200" height="60" rx="8" fill="#4a7c59" stroke="#2e7d32" stroke-width="2"/>
+  <text x="600" y="225" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Sophie Leroy</text>
+  <text x="600" y="245" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">Responsable Commercial</text>
+  
+  <!-- Connection lines to teams -->
+  <line x1="200" y1="260" x2="200" y2="300" stroke="#666" stroke-width="2"/>
+  <line x1="120" y1="300" x2="280" y2="300" stroke="#666" stroke-width="2"/>
+  <line x1="120" y1="300" x2="120" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="200" y1="300" x2="200" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="280" y1="300" x2="280" y2="320" stroke="#666" stroke-width="2"/>
+  
+  <line x1="400" y1="260" x2="400" y2="320" stroke="#666" stroke-width="2"/>
+  
+  <line x1="600" y1="260" x2="600" y2="300" stroke="#666" stroke-width="2"/>
+  <line x1="520" y1="300" x2="680" y2="300" stroke="#666" stroke-width="2"/>
+  <line x1="520" y1="300" x2="520" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="600" y1="300" x2="600" y2="320" stroke="#666" stroke-width="2"/>
+  <line x1="680" y1="300" x2="680" y2="320" stroke="#666" stroke-width="2"/>
+  
+  <!-- Teams -->
+  <!-- Technical Teams -->
+  <rect x="60" y="320" width="120" height="50" rx="6" fill="#a5d6a7" stroke="#66bb6a" stroke-width="1"/>
+  <text x="120" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1b5e20">Plomberie</text>
+  <text x="120" y="355" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#2e7d32">3 Techniciens</text>
+  
+  <rect x="140" y="320" width="120" height="50" rx="6" fill="#a5d6a7" stroke="#66bb6a" stroke-width="1"/>
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1b5e20">Chauffage</text>
+  <text x="200" y="355" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#2e7d32">2 Techniciens</text>
+  
+  <rect x="220" y="320" width="120" height="50" rx="6" fill="#a5d6a7" stroke="#66bb6a" stroke-width="1"/>
+  <text x="280" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1b5e20">Sanitaire</text>
+  <text x="280" y="355" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#2e7d32">2 Techniciens</text>
+  
+  <!-- Operations Team -->
+  <rect x="340" y="320" width="120" height="50" rx="6" fill="#fff3e0" stroke="#ffb74d" stroke-width="1"/>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#e65100">Planning</text>
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#f57c00">1 Coordinateur</text>
+  
+  <!-- Commercial Teams -->
+  <rect x="460" y="320" width="120" height="50" rx="6" fill="#e1f5fe" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="520" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#01579b">Devis</text>
+  <text x="520" y="355" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0277bd">2 Commerciaux</text>
+  
+  <rect x="540" y="320" width="120" height="50" rx="6" fill="#e1f5fe" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="600" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#01579b">Clientèle</text>
+  <text x="600" y="355" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0277bd">1 Attaché</text>
+  
+  <rect x="620" y="320" width="120" height="50" rx="6" fill="#e1f5fe" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="680" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#01579b">Marketing</text>
+  <text x="680" y="355" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0277bd">1 Responsable</text>
+  
+  <!-- Support Services -->
+  <rect x="150" y="420" width="500" height="40" rx="6" fill="#f3e5f5" stroke="#ba68c8" stroke-width="1"/>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4a148c">Services Support: Comptabilité, Logistique, Qualité</text>
+  
+  <!-- Key Metrics -->
+  <rect x="50" y="500" width="200" height="60" rx="6" fill="#e8f5e8" stroke="#4caf50" stroke-width="1"/>
+  <text x="150" y="520" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1b5e20">7 Techniciens</text>
+  <text x="150" y="535" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2e7d32">+ 4 Bureau</text>
+  <text x="150" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#388e3c">Total: 11 Personnes</text>
+  
+  <rect x="300" y="500" width="200" height="60" rx="6" fill="#e3f2fd" stroke="#2196f3" stroke-width="1"/>
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#0d47a1">14 Ans d'Expérience</text>
+  <text x="400" y="535" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1565c0">Depuis 2010</text>
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1976d2">+ 5000 Clients</text>
+  
+  <rect x="550" y="500" width="200" height="60" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+  <text x="650" y="520" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#e65100">RGE Certifié</text>
+  <text x="650" y="535" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f57c00">Qualibat</text>
+  <text x="650" y="550" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#ff8f00">Garantie 2 Ans</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="120" height="80" rx="10" fill="#2d5016"/>
+  
+  <!-- Pipe icon -->
+  <rect x="20" y="25" width="40" height="8" rx="4" fill="white"/>
+  <rect x="30" y="15" width="8" height="25" rx="4" fill="white"/>
+  
+  <!-- Wrench icon -->
+  <path d="M60 35 L65 40 L75 30 L80 35 L70 45 L65 40 Z" fill="white"/>
+  <circle cx="72" cy="32" r="3" fill="white"/>
+  
+  <!-- Text -->
+  <text x="85" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">NG</text>
+  <text x="85" y="50" font-family="Arial, sans-serif" font-size="8" fill="white">Plomberie</text>
+</svg>
