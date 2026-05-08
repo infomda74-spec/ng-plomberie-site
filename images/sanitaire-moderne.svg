@@ -1,0 +1,47 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Modern bathroom -->
+  <rect x="60" y="40" width="280" height="220" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+  
+  <!-- Modern sink -->
+  <ellipse cx="120" cy="120" rx="40" ry="25" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <rect x="110" y="120" width="20" height="40" fill="#34495e"/>
+  <rect x="105" y="160" width="30" height="5" fill="#2c3e50"/>
+  
+  <!-- Modern faucet -->
+  <rect x="115" y="110" width="10" height="15" fill="#bdc3c7" rx="2"/>
+  <circle cx="120" cy="108" r="3" fill="#95a5a6"/>
+  
+  <!-- Modern toilet -->
+  <ellipse cx="280" cy="140" rx="30" ry="40" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  <rect x="270" y="100" width="20" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  <rect x="275" y="95" width="10" height="8" fill="#bdc3c7" rx="2"/>
+  
+  <!-- Shower -->
+  <rect x="180" y="80" width="80" height="80" fill="#e8f4f8" stroke="#3498db" stroke-width="2" rx="5"/>
+  <circle cx="220" cy="100" r="8" fill="#3498db" opacity="0.3"/>
+  <circle cx="210" cy="110" r="6" fill="#3498db" opacity="0.3"/>
+  <circle cx="230" cy="115" r="7" fill="#3498db" opacity="0.3"/>
+  
+  <!-- Shower head -->
+  <rect x="215" y="70" width="10" height="15" fill="#7f8c8d" rx="2"/>
+  <rect x="210" y="68" width="20" height="4" fill="#95a5a6" rx="2"/>
+  
+  <!-- Modern tiles -->
+  <pattern id="tiles" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <rect width="20" height="20" fill="#e8f4f8"/>
+    <rect x="0" y="0" width="1" height="20" fill="#d1ecf1"/>
+    <rect x="0" y="0" width="20" height="1" fill="#d1ecf1"/>
+  </pattern>
+  <rect x="60" y="40" width="280" height="80" fill="url(#tiles)"/>
+  
+  <!-- Professional tools -->
+  <rect x="320" y="200" width="25" height="4" fill="#e74c3c" transform="rotate(45 332 202)"/>
+  <rect x="330" y="210" width="20" height="3" fill="#f39c12" transform="rotate(-30 340 211)"/>
+  
+  <!-- Quality badge -->
+  <rect x="150" y="240" width="100" height="20" fill="#27ae60" rx="10"/>
+  <text x="200" y="253" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">QUALITÉ PRO</text>
+</svg>

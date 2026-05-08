@@ -322,6 +322,25 @@ document.addEventListener('DOMContentLoaded', function() {
         revealOnScroll.observe(element);
     });
 
+    // Sticky CTA functionality
+    const stickyCta = document.querySelector('.sticky-cta');
+    if (stickyCta) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                stickyCta.style.opacity = '1';
+                stickyCta.style.transform = 'translateY(0)';
+            } else {
+                stickyCta.style.opacity = '0.8';
+                stickyCta.style.transform = 'translateY(100px)';
+            }
+        });
+        
+        // Initial state
+        stickyCta.style.opacity = '0.8';
+        stickyCta.style.transform = 'translateY(100px)';
+        stickyCta.style.transition = 'all 0.3s ease';
+    }
+
     // Emergency contact button
     const emergencyButtons = document.querySelectorAll('a[href^="tel:"]');
     emergencyButtons.forEach(button => {
@@ -351,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
             border: none;
             cursor: pointer;
             box-shadow: var(--shadow-hover);
-            z-index: 1000;
+            z-index: 999;
             font-size: 1.5rem;
             display: flex;
             align-items: center;
