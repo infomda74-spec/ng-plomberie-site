@@ -322,6 +322,25 @@ document.addEventListener('DOMContentLoaded', function() {
         revealOnScroll.observe(element);
     });
 
+    // Sticky CTA functionality
+    const stickyCta = document.querySelector('.sticky-cta');
+    if (stickyCta) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                stickyCta.style.opacity = '1';
+                stickyCta.style.transform = 'translateY(0)';
+            } else {
+                stickyCta.style.opacity = '0.8';
+                stickyCta.style.transform = 'translateY(100px)';
+            }
+        });
+        
+        // Initial state
+        stickyCta.style.opacity = '0.8';
+        stickyCta.style.transform = 'translateY(100px)';
+        stickyCta.style.transition = 'all 0.3s ease';
+    }
+
     // Emergency contact button
     const emergencyButtons = document.querySelectorAll('a[href^="tel:"]');
     emergencyButtons.forEach(button => {
@@ -351,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
             border: none;
             cursor: pointer;
             box-shadow: var(--shadow-hover);
-            z-index: 1000;
+            z-index: 999;
             font-size: 1.5rem;
             display: flex;
             align-items: center;
@@ -446,3 +465,166 @@ if (isMobile()) {
 if (isTouchDevice()) {
     document.body.classList.add('touch-device');
 }
+
+// FAQ Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const faqItem = this.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
+});
+
+// Google Maps Initialization
+function initMap() {
+    // Location for NG Plomberie (123 Avenue de la Plomberie, 75000 Paris, France)
+    const location = { lat: 48.8566, lng: 2.3522 };
+    
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: location,
+        styles: [
+            {
+                featureType: "poi",
+                elementType: "labels",
+                stylers: [{ visibility: "off" }]
+            }
+        ]
+    });
+    
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: "NG Plomberie",
+        icon: {
+            url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" fill="#2d5016" stroke="white" stroke-width="2"/>
+                    <path d="M20 12 L20 24 M16 20 L24 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            `),
+            scaledSize: new google.maps.Size(40, 40)
+        }
+    });
+    
+    const infoWindow = new google.maps.InfoWindow({
+        content: `
+            <div style="padding: 10px;">
+                <h3 style="margin: 0 0 10px 0; color: #2d5016;">NG Plomberie</h3>
+                <p style="margin: 0 0 5px 0;">123 Avenue de la Plomberie</p>
+                <p style="margin: 0 0 5px 0;">75000 Paris, France</p>
+                <p style="margin: 0 0 5px 0;"><strong>Tél:</strong> 01 23 45 67 89</p>
+                <p style="margin: 0;"><strong>Urgences:</strong> 06 12 34 56 78</p>
+            </div>
+        `
+    });
+    
+    marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+    });
+    
+    // Open info window on load
+    infoWindow.open(map, marker);
+}
+
+// Gallery Lightbox
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const img = this.querySelector('img');
+            const title = this.querySelector('.gallery-overlay h3').textContent;
+            const location = this.querySelector('.gallery-overlay p').textContent;
+            
+            // Create lightbox overlay
+            const lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML = `
+                <div class="lightbox-content">
+                    <span class="lightbox-close">&times;</span>
+                    <img src="${img.src}" alt="${title}" style="max-width: 90vw; max-height: 90vh;">
+                    <div class="lightbox-info">
+                        <h3>${title}</h3>
+                        <p>${location}</p>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(lightbox);
+            
+            // Close lightbox
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                    document.body.removeChild(lightbox);
+                }
+            });
+        });
+    });
+});
+
+// Add lightbox styles dynamically
+const lightboxStyles = document.createElement('style');
+lightboxStyles.textContent = `
+    .lightbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .lightbox.active {
+        opacity: 1;
+    }
+    
+    .lightbox-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    
+    .lightbox-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+    }
+    
+    .lightbox-info {
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        margin-top: 10px;
+    }
+    
+    .lightbox-info h3 {
+        margin-bottom: 10px;
+        color: #7cb342;
+    }
+`;
+document.head.appendChild(lightboxStyles);
